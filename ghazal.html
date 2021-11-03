@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lightbox</title>
+    <link rel="stylesheet" href="ghazal.css" />
+  </head>
+  <body>
+    <div id="card-modal-wrapper" class="modal-wrapper">
+      <div class="card-modal">
+        <span onclick="closeCardModal()">&times;</span>
+        <div id="card-content"></div>
+      </div>
+    </div>
+    <section class="card-holder">
+      <div class="card card-1">
+        <h2>Mountain</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+          molestiae.
+        </p>
+        <button type="button" class="card-btn">Read more</button>
+      </div>
+      <div class="card card-2">
+        <h2>Forest</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, quae?
+        </p>
+        <button type="button" class="card-btn">Read more</button>
+      </div>
+      <div class="card card-3">
+        <h2>Desert</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+          dolorum.
+        </p>
+        <button type="button" class="card-btn">Read more</button>
+      </div>
+    </section>
+    <section class="picture-holder">
+      <div class="picture"><img src="img/nature1.jpg" alt="" /></div>
+      <div class="picture"><img src="img/nature2.jpg" alt="" /></div>
+      <div class="picture"><img src="img/nature3.jpg" alt="" /></div>
+      <div class="picture"><img src="img/nature4.jpg" alt="" /></div>
+    </section>
+    <div id="lightbox-wrapper">
+      <span class="close-btn" onclick="closeLightbox()">&times;</span>
+      <div id="main-image-wrapper">
+        <img class="main-image" src="img/nature1.jpg" alt="" />
+        <span id="prev-btn">&#10094;</span>
+        <span id="next-btn">&#10095;</span>
+      </div>
+      <div id="thumbnails"></div>
+    </div>
+  </body>
+  <script src="ghazal.js"></script>
+</html>
